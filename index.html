@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тарифы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <p class="heder">Cкидка действует:<p>
+        <div class="timer" id="timer">02:00
+           
+        </div>
+    </header>
+    <main>
+        <section class="price-list">
+            <h1>Выберите подходящий тарифный план</h1>
+            <div class="tariffs-container" id="tariffs-container">
+                <img class="man" src="img/mand.png" alt="muscle man">
+        <div class="tariffs" id="tariffs">  
+         </div>
+            </div>
+         <div class="info">
+            <p class="more-info">Cледуя плану на 3 месяца, люди получают в 2 раза лучший результат,<br> чем за 1 месяц</p> 
+            <div class="privacy-container">
+                <label class="privacy">
+                    <input type="checkbox"  name ="privacy" value="true"><div class="custom-checkbox"></div>
+                    <p class="privacy-text">Я соглашаюсь с
+                    <a href="#" target="_blank">Правилами сервиса</a> и условиями <a href="#" target="_blank">Публичной оферты</a>
+                    </p>
+                </label>
+            </div>
+            <button class="btn-buy" id="btn-buy">Купить</button>
+            <p class="text-buy">Нажимая «Купить», Пользователь соглашается на автоматическое списание денежных средств по истечению купленного периода. Дальнейшие списания по тарифам участвующим в акции осуществляются по полной стоимости согласно оферте.</p>
+        </div>
+        </div>        
+        </section>
+    </main>
+    <div id="overlay" class="overlay"></div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <div class="hot-discount">
+                <p>горящее предложение</p>
+            </div>
+            <h2 class="">Не упусти свой <span>последний шанс</span></h2>
+            <h4>Мы знаем, как трудно начать...<strong>Поэтому!</strong></h4>
+            <h4 class="present">Дарим скидку для легкого старта</h4>
+            <p>Посмотри, что мы для тебя приготовили&#128293</p>
+            <div class="extra-discounts" id="extra-discounts">
+                <!-- Дополнительные скидки будут динамически добавляться сюда -->
+            </div>
+            <button class="start-trening" id="btn-buy">Начать тренироваться</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
